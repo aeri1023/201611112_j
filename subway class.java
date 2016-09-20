@@ -8,5 +8,5 @@ line=l;
 }
 }
 Subway mySub=new Subway();
-mySub setLine(7):
-my/sub run();
+mySub.setLine(7);
+mySub.run();
