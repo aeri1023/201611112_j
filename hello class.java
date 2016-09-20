@@ -6,4 +6,4 @@ class Hello {
     }
 }
 Hello h=new Hello();
-h.sayhello();
+h.sayHello();
