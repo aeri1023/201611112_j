@@ -7,3 +7,6 @@ void setLine(int l){
 line=l;
 }
 }
+Subway mySub=new Subway();
+mySub setLine(7):
+my/sub run();
