@@ -1,29 +1,22 @@
-class Rectangle{
-private int width;
-private int height;
-public Rectangle(int w, int h) {
-this.width=w;
-this.height=h;
+package com.sd.ch8;
+public class Rectangle{
+  protected double length;
+  protected double width;
+  protected boolean isSelected;
+  public Rectangle(double l, double w){
+    this.length=1;
+    this.width=1;
+  }
+  public double getLenth(){
+    return this.length;
+  }
+  public double getWidth(){
+    return this.width;
+  }
+  public boolean getSelected(){
+    return this.isSelected;
+  }
+  public void setSelected(boolean b){
+    this .isSelected=b;
+  }
 }
-public int getWidth(){
-return width;
-}
-public int getHeight(){
-return height;
-}
-public void setWidth(int newWidth){
-width=newWidth;
-}
-public void setHeight(int h){
-height=h;
-}
-public int calcArea(){
-return width*height;
-}
-public void setSize(int w,int h){
-setWidth(w);
-setHeight(h);
-}
-}
-Rectangle r=new Rectangle(4,5);
-r.calcArea();
