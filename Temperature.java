@@ -13,4 +13,8 @@ void change(String a, float b){
         System.out.println("user in put error!");
     }
 }
+public static void main(String[] args){
+    Temperature t=new Temperature();
+    t.change("F",45);
+}
 }
