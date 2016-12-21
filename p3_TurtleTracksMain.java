@@ -1,7 +1,7 @@
 
 import ch.aplu.turtle.*;
 
-public class TurtleTracksMain{
+public class p3_TurtleTracksMain{
  static void drawSquareFrom(double[][]tracks){
    Turtle t1=new Turtle();
    t1.penUp();
