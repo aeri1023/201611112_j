@@ -1,26 +1,32 @@
 /classpath lib/aplu5.jar
 import ch.aplu.turtle.*;
-void drawTriangleorSquare(int size, int sides, double angle){
-Turtle t1=new Turtle();
-for (int i=0;i<sides;i++){
-t1.fd(size);
-t1.rt(angle);
-}
-}
 
-enum Shape{TRIANGLE, SQUARE}
-Shape sel=Shape.TRIANGLE;
-int size=100;
-int sides;
-double angle;
-switch (sel){
-case TRIANGLE:
-sides=3;
-angle=120;
-break;
-case SQUARE:
-sides=4;
-angle=90;
-break;
+class DrawTriangleorSquare{
+    static enum Shape {TRIANGLE, SQUARE};
+    static Turtle t1=new Turtle();
+    static void drawSquareOrTriangle(int size, int sides, double angle) {
+        t1.home();
+        t1.clear();
+        for(int i=0;i<sides;i++) {
+            t1.forward(size);
+            t1.right(angle);
+        }
+    }
+    public static void main(String[] args) {
+        Shape sel=Shape.TRIANGLE;
+        int size=100;
+        int sides=0;
+        double angle=0.0;
+        switch(sel) {
+          case TRIANGLE:
+            sides=3;
+            angle=120;
+            break;
+          case SQUARE:
+            sides=4;
+            angle=90;
+            break;
+        }
+        drawSquareOrTriangle(100,sides,angle);
+    }
 }
-drawTriangleorSquare(size,sides,angle);
